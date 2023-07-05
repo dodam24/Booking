@@ -26,3 +26,24 @@
 ![](./profile-3d-contrib/profile-night-rainbow.svg)
 
 </div>
+
+## 💬 About me
+  <p>
+    👩🏻‍💻 I'm currently learning back-end and front-end skills
+  </p>
+<br>
+
+
+#### 💪 Skills
+  <p>
+    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
+  </p>
+<br>
+
+
+#### 📨 Contact
+<p>
+  <a href="mailto:dodam0724@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/dodam0724@gmail.com-EA4335?style=flat-square&logo=Gmail&logoColor=white"/>
+  </a>
+</p>
