@@ -40,6 +40,9 @@
    ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=JavaScript&logoColor=%23F7DF1E)
    ![React](https://img.shields.io/badge/React-444444?style=flat-square&logo=React)
    ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=149ECA)
+
+   ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white)
+   ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=Kubernetes&logoColor=white)
 <br><br><br>
 
 
