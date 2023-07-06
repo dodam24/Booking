@@ -1,8 +1,5 @@
 <div align="center">
 
-<!--
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Hi+there%2C+I'm+Dodam.)](https://git.io/typing-svg)
--->
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+my+Github.)](https://git.io/typing-svg)
 
@@ -27,8 +24,7 @@
   </a>
 </div>
 
-![](./profile-3d-contrib/profile-night-rainbow.svg)
-
+<!-- 3D 잔디 ![3D](./profile-3d-contrib/profile-night-rainbow.svg) -->
 </div>
 
 ## 💬 About me
