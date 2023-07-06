@@ -1,7 +1,7 @@
 <div align="center">
 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+my+Github.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+Dodam's+Github.)](https://git.io/typing-svg)
 
 <p>
   <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="50%">
@@ -35,10 +35,12 @@
 
 
 #### 💪 Skills
-  <p>
-    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=149ECA"/>
-  </p>
-<br>
+   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white)
+   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white)
+   ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=JavaScript&logoColor=%23F7DF1E)
+   ![React](https://img.shields.io/badge/React-444444?style=flat-square&logo=React)
+   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=149ECA)
+<br><br><br>
 
 
 #### 📨 Contact
