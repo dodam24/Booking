@@ -39,10 +39,15 @@
    ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white)
    ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=JavaScript&logoColor=%23F7DF1E)
    ![React](https://img.shields.io/badge/React-444444?style=flat-square&logo=React)
-   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=149ECA)
+   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=FFDD54)
 
+   ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white)
+
+   ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+   ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)
    ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white)
    ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=Kubernetes&logoColor=white)
+
 <br><br><br>
 
 
