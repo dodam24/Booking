@@ -1,17 +1,17 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=4E88F7&text=&animation=twinkling&height=80)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=4E88F7&text=&animation=twinkling&height=80)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+Dodam's+Github)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+My+Github!%20👋)](https://git.io/typing-svg)
 
 <br>
 
   <hr>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=HITS&edge_flat=false)](https://hits.seeyoufarm.com)
 
 <p>
-  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="470px" height="300px">
+  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="80%">
 </p>
 
 <br>
@@ -25,11 +25,11 @@
 <div align="center">
   <!-- Dodam's Githun stats -->
   <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true" width="57%">
+    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true">
   </a>
   <!-- Top Langs -->
   <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true" width="42%">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true">
   </a>
 </div>
 
