@@ -11,7 +11,7 @@
 <!-- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=HITS&edge_flat=false)](https://hits.seeyoufarm.com) -->
 
 <p>
-  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="80%">
+  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="70%">
 </p>
 
 <br>
@@ -65,7 +65,6 @@
    -->
 
 <h4> 📚&nbsp; Tech Stack </h4>
-	<br>
 <p align=“center”>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=HTML5&amp;logoColor=white">
   <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&amp;logo=CSS3&amp;logoColor=white">
@@ -82,7 +81,6 @@
 
 <!-- #### 📨 &nbsp; Contact -->
 <h4> 📨 &nbsp; Contact </h4>
-	<br>
 <p>
   <!-- <a href="mailto:dodam0724@gmail.com" target="_blank"> -->
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white"/>
