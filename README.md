@@ -1,6 +1,5 @@
 <div align="center">
 
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+Dodam's+Github.)](https://git.io/typing-svg)
 
 <p>
@@ -41,12 +40,12 @@
    ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=CoffeeScript&logoColor=white)
    ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=FFDD54)
    ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white)
-   ![Oracle](https://img.shields.io/badge/ORACLE-F80000?style=flat-square&logo=oracle&logoColor=white)
    ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
    ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white)
    ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=Kubernetes&logoColor=white)
    <!-- ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=Spring%20Boot&logoColor=white) -->
    <!-- ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white) -->
+   <!-- ![Oracle](https://img.shields.io/badge/ORACLE-F80000?style=flat-square&logo=oracle&logoColor=white) -->
    <!-- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white) -->
    <!-- ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white) -->
 <br>
