@@ -4,7 +4,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+Dodam's+Github.)](https://git.io/typing-svg)
 
 <p>
-  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="50%">
+  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="70%">
 </p>
 
 <!--
@@ -16,11 +16,11 @@
 <div align="center">
   <!-- Dodam's Githun stats -->
   <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true" width="45%">
+    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true">
   </a>
   <!-- Top Langs -->
   <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true" width="34%">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true">
   </a>
 </div>
 
