@@ -4,7 +4,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=40&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+Dodam's+Github.)](https://git.io/typing-svg)
 
 <p>
-  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="70%">
+  <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="60%">
 </p>
 
 <!--
@@ -16,12 +16,12 @@
 <div align="center">
   <!-- Dodam's Githun stats -->
   <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true">
+    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true" width="57%">
   </a>
   <!-- Top Langs -->
-  <!-- <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true">
-  </a> -->
+  <a href="https://github.com/metleeha">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true" width="42%">
+  </a>
 </div>
 
 <!-- 3D 잔디 ![3D](./profile-3d-contrib/profile-night-rainbow.svg) -->
@@ -38,6 +38,7 @@
    ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white)
    ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=JavaScript&logoColor=%23F7DF1E)
    ![React](https://img.shields.io/badge/React-444444?style=flat-square&logo=React)
+   ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=CoffeeScript&logoColor=white)
    ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=FFDD54)
    ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white)
    ![Oracle](https://img.shields.io/badge/ORACLE-F80000?style=flat-square&logo=oracle&logoColor=white)
