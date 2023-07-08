@@ -8,7 +8,7 @@
 
   <hr>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=HITS&edge_flat=false)](https://hits.seeyoufarm.com)
+<!-- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=HITS&edge_flat=false)](https://hits.seeyoufarm.com) -->
 
 <p>
   <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg" width="80%">
@@ -28,9 +28,9 @@
     <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true">
   </a>
   <!-- Top Langs -->
-  <a href="https://github.com/metleeha">
+  <!-- <a href="https://github.com/metleeha">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dodam24&layout=compact&theme=github_dark&hide_border=true">
-  </a>
+  </a> -->
 </div>
 
 <!-- 3D 잔디 ![3D](./profile-3d-contrib/profile-night-rainbow.svg) -->
