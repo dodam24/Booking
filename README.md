@@ -1,7 +1,6 @@
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=4E88F7&text=&animation=twinkling&height=80)
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Playball&size=37&pause=1000&color=4E88F7&center=true&vCenter=true&width=435&lines=Welcome+to+My+Github!%20👋)](https://git.io/typing-svg)
 
 
