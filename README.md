@@ -25,7 +25,7 @@
 <div align="center">
   <!-- Dodam's Githun stats -->
   <a href="https://github.com/metleeha">
-    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true&width="70%"">
+    <img src="https://github-readme-stats.vercel.app/api?username=dodam24&layout=compact&theme=github_dark&hide_border=true&show_icons=true&width="70%">
   </a>
   <!-- Top Langs -->
   <!-- <a href="https://github.com/metleeha">
