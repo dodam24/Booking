@@ -41,6 +41,7 @@
 <h2> 💬 &nbsp; About me </h2>
   <p>
     <h6> I'm currently learning Back-end skills and Front-end skills 🐣 </h6>
+    <!-- <h6> I majored in Hotel Management and double majored in Business Administration 👩🏻‍🎓 </h6> -->
   </p>
 <br>
 
