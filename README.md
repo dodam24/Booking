@@ -40,8 +40,9 @@
 <!-- ## 💬 &nbsp; About me -->
 <h2> 💬 &nbsp; About me </h2>
   <p>
-    <h6> I'm currently learning Back-end skills and Front-end skills 🐣 </h6>
-    <!-- <h6> I majored in Hotel Management and double majored in Business Administration 👩🏻‍🎓 </h6> -->
+    <a> I'm currently learning Back-End skills and Front-End skills. </a>
+    <br>
+    <a> I majored in Hotel Management and double majored in Business Administration. </a>
   </p>
 <br>
 
@@ -64,7 +65,7 @@
    <!-- ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)
    -->
 
-<h4> 📚&nbsp; Tech Stack </h4>
+<h4> 💻 &nbsp; Tech Stack </h4>
 <p align=“center”>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=HTML5&amp;logoColor=white">
   <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&amp;logo=CSS3&amp;logoColor=white">
