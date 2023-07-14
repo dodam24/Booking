@@ -7,7 +7,7 @@
 
   <hr>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+<!-- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdodam24%2Fhit-counter&count_bg=%23007BFF&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) -->
 
 <p>
   <img src="https://github.com/dodam24/dodam24/raw/main/background.jpg">
@@ -71,14 +71,15 @@ I strive to be a developer who not only writes clean and efficient code but also
 
 <h4> 💻 &nbsp; Tech Stack </h4>
 <p align=“center”>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=HTML5&amp;logoColor=white">
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&amp;logo=CSS3&amp;logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&amp;logo=JavaScript&amp;logoColor=%23F7DF1E">
+<!--   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=HTML5&amp;logoColor=white">
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&amp;logo=CSS3&amp;logoColor=white"> -->
   <img src="https://img.shields.io/badge/React-444444?style=flat-square&amp;logo=React">
+  <img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&amp;logo=JavaScript&amp;logoColor=%23F7DF1E">
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&amp;logo=CoffeeScript&amp;logoColor=white">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=Python&amp;logoColor=FFDD54">
   <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&amp;logo=Spring&amp;logoColor=white">
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white">
+  <!-- <img src="https://img.shields.io/badge/ORACLE-F80000?style=flat-square&logo=oracle&logoColor=white"> -->
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=Docker&amp;logoColor=white">
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=Kubernetes&amp;logoColor=white"> 
 </p>
