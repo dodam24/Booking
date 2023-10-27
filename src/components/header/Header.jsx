@@ -5,6 +5,7 @@ import {
   faPerson,
   faPlane,
   faTaxi,
+  faCableCar
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
@@ -68,7 +69,7 @@ const Header = ({ type }) => {
             <span>Car rentals</span>
           </div>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faBed} />
+            <FontAwesomeIcon icon={faCableCar} />
             <span>Attractions</span>
           </div>
           <div className="headerListItem">
@@ -83,7 +84,7 @@ const Header = ({ type }) => {
             </h1>
             <p className="headerDesc">
               Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              more with a free Hotelbooking account
             </p>
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
