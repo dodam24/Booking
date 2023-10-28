@@ -1,3 +1,6 @@
+<img src="https://github.com/dodam24/Booking/assets/121652059/21d0ee51-da86-4500-ac97-ff6b87c4d5bb" width="80%">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
