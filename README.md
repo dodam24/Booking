@@ -1,4 +1,4 @@
-<img src="https://github.com/dodam24/Booking/assets/121652059/21d0ee51-da86-4500-ac97-ff6b87c4d5bb" width="80%">
+<img src="https://github.com/dodam24/Booking/assets/121652059/9d8074db-a88e-4a21-8046-d61e70ccaed3">
 
 
 # Getting Started with Create React App
