@@ -47,5 +47,5 @@ app.use((err, req, res, next) => {
 
 app.listen(8000, () => {
   connect();
-  console.log("Conncted to backend!");
+  console.log("Conncted to backend.");
 });
