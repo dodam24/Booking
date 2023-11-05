@@ -1,4 +1,9 @@
-<img src="https://github.com/dodam24/Booking/assets/121652059/9d8074db-a88e-4a21-8046-d61e70ccaed3">
+# Home
+<img alt="Home" src="https://github.com/dodam24/Booking/assets/121652059/9d8074db-a88e-4a21-8046-d61e70ccaed3">
+
+# Admin Dashboard
+<img alt="Admin Dashboard" src="https://github.com/dodam24/BookingApp/assets/121652059/b139efab-feab-4306-8e5e-603af2b71759">
+
 
 
 # Getting Started with Create React App
