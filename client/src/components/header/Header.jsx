@@ -58,33 +58,32 @@ const Header = ({ type }) => {
         <div className="headerList">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
+            <span>숙소</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
+            <span>항공권</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
-            <span>Car rentals</span>
+            <span>렌터카</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faUmbrellaBeach} />
-            <span>Attractions</span>
+            <span>투어&액티비티</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport taxis</span>
+            <span>공항 택시</span>
           </div>
         </div>
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's Genius.
+              숙소 예약 시 30% 이상 할인
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Hotelbooking account
+              여행에 대한 보상을 받으세요! - 무료 Hotelbooking 계정으로 10% 이상 즉시 할인 혜택을 누리세요.
             </p>
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
@@ -122,11 +121,11 @@ const Header = ({ type }) => {
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
                   className="headerSearchText"
-                >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
+                >{`성인 ${options.adult}명 · 아동 ${options.children}명 · 객실 ${options.room}개`}</span>
                 {openOptions && (
                   <div className="options">
                     <div className="optionItem">
-                      <span className="optionText">Adult</span>
+                      <span className="optionText">성인</span>
                       <div className="optionCounter">
                         <button
                           disabled={options.adult <= 1}
@@ -147,7 +146,7 @@ const Header = ({ type }) => {
                       </div>
                     </div>
                     <div className="optionItem">
-                      <span className="optionText">Children</span>
+                      <span className="optionText">어린이</span>
                       <div className="optionCounter">
                         <button
                           disabled={options.children <= 0}
@@ -168,7 +167,7 @@ const Header = ({ type }) => {
                       </div>
                     </div>
                     <div className="optionItem">
-                      <span className="optionText">Room</span>
+                      <span className="optionText">객실</span>
                       <div className="optionCounter">
                         <button
                           disabled={options.room <= 1}
@@ -193,7 +192,7 @@ const Header = ({ type }) => {
               </div>
               <div className="headerSearchItem">
                 <button className="headerBtn" onClick={handleSearch}>
-                  Search
+                  검색
                 </button>
               </div>
             </div>

@@ -72,18 +72,17 @@ const Hotel = () => {
             </div>
           )}
           <div className="hotelWrapper">
-            <button className="bookNow">Reserve or Book Now!</button>
+            <button className="bookNow">지금 예약</button>
             <h1 className="hotelTitle">{data.name}</h1>
             <div className="hotelAddress">
               <FontAwesomeIcon icon={faLocationDot} />
               <span>{data.address}</span>
             </div>
             <span className="hotelDistance">
-              Excellent location – {data.distance}m from center
+              최고의 위치 – 중심부에서 {data.distance}m
             </span>
             <span className="hotelPriceHighlight">
-              Book a stay over ${data.cheapestPrice} at this property and get a
-              free airport taxi
+              이 숙박 시설에서 ${data.cheapestPrice} 이상 예약하시면 무료 공항 택시를 이용하실 수 있습니다.
             </span>
             <div className="hotelImages">
               {data.photos?.map((photo, i) => (
@@ -103,15 +102,14 @@ const Hotel = () => {
                 <p className="hotelDesc">{data.desc}</p>
               </div>
               <div className="hotelDetailsPrice">
-                <h1>Perfect for a 9-night stay!</h1>
+                <h1>9박 일정에 완벽한 선택!</h1>
                 <span>
-                  Located in the real heart of Krakow, this property has an
-                  excellent location score of 9.8!
+                  크라쿠프의 중심에 위치한 이 숙박 시설은 9.8의 훌륭한 위치 평점을 자랑합니다.
                 </span>
                 <h2>
-                  <b>$945</b> (9 nights)
+                  <b>$945</b> <small>(9박)</small>
                 </h2>
-                <button>Reserve or Book Now!</button>
+                <button>예약 가능 여부 확인</button>
               </div>
             </div>
           </div>
