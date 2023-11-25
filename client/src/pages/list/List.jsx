@@ -53,8 +53,8 @@ const List = () => {
               <label>체크인 및 체크아웃 날짜</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${format(
                 date[0].startDate,
-                "MM/dd/yyyy"
-              )} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
+                "yyyy/MM/dd"
+              )} - ${format(date[0].endDate, "yyyy/MM/dd")}`}</span>
               {openDate && (
                 <DateRange
                   onChange={(item) => setDate([item.selection])}
@@ -64,11 +64,11 @@ const List = () => {
               )}
             </div>
             <div className="lsItem">
-              <label>Options</label>
+              <label>옵션</label>
               <div className="lsOptions">
                 <div className="lsOptionItem">
                   <span className="lsOptionText">
-                    최저가 <small>per night</small>
+                    최저가 <small>(1박 기준)</small>
                   </span>
                   <input
                     type="number"
@@ -78,7 +78,7 @@ const List = () => {
                 </div>
                 <div className="lsOptionItem">
                   <span className="lsOptionText">
-                    최고가 <small>per night</small>
+                    최고가 <small>(1박 기준)</small>
                   </span>
                   <input
                     type="number"

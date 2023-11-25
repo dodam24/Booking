@@ -13,6 +13,7 @@ const Home = () => {
       <Navbar />
       <Header/>
       <div className="homeContainer">
+        <h1 className="homeTitle">떠오르는 인기 여행지</h1>
         <Featured/>
         <h1 className="homeTitle">다양한 유형의 숙소를 확인해보세요</h1>
         <PropertyList/>
