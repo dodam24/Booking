@@ -55,7 +55,7 @@ const List = () => {
                 date[0].startDate,
                 "yyyy/MM/dd"
               )} - ${format(date[0].endDate, "yyyy/MM/dd")}`}</span>
-              {openDate && (
+              {openDate && (  // 열려 있으면 날짜 범위를 보여준다.
                 <DateRange
                   onChange={(item) => setDate([item.selection])}
                   minDate={new Date()}

@@ -10,17 +10,34 @@ import {
   faCircleXmark,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import useFetch from "../../hooks/useFetch";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { SearchContext } from "../../context/SearchContext";
+import { AuthContext } from "../../context/AuthContext";
+import Reserve from "../../components/reserve/Reserve";
 
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
   const [slideNumber, setSlideNumber] = useState(0);
   const [open, setOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const { dates, options } = useContext(SearchContext);
+
+  const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+  function dayDifference(date1, date2) {
+    const timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    const diffDays = Math.ceil(timeDiff / MILLISECONDS_PER_DAY);
+    return diffDays;
+  }
+
+  const days = dayDifference(dates[0].endDate, dates[0].startDate);
 
   const handleOpen = (i) => {
     setSlideNumber(i);
@@ -39,11 +56,21 @@ const Hotel = () => {
     setSlideNumber(newSlideNumber);
   };
 
+  const handleClick = () => {
+    if (user) {
+      setOpenModal(true);
+    } else {
+      navigate("/login");
+    }
+  };
+
   return (
     <div>
       <Navbar />
       <Header type="list" />
-      {
+      {loading ? (
+        "loading"
+      ) : (
         <div className="hotelContainer">
           {open && (
             <div className="slider">
@@ -82,7 +109,8 @@ const Hotel = () => {
               최고의 위치 – 중심부에서 {data.distance}m
             </span>
             <span className="hotelPriceHighlight">
-              이 숙박 시설에서 ${data.cheapestPrice} 이상 예약하시면 무료 공항 택시를 이용하실 수 있습니다.
+              이 숙박 시설에서 ${data.cheapestPrice} 이상 예약하시면 무료 공항
+              택시를 이용하실 수 있습니다.
             </span>
             <div className="hotelImages">
               {data.photos?.map((photo, i) => (
@@ -104,19 +132,22 @@ const Hotel = () => {
               <div className="hotelDetailsPrice">
                 <h1>9박 일정에 완벽한 선택!</h1>
                 <span>
-                  크라쿠프의 중심에 위치한 이 숙박 시설은 9.8의 훌륭한 위치 평점을 자랑합니다.
+                  크라쿠프의 중심에 위치한 이 숙박 시설은 9.8의 훌륭한 위치
+                  평점을 자랑합니다.
                 </span>
                 <h2>
-                  <b>$945</b> <small>(9박)</small>
+                  <b>${days * data.cheapestPrice * options.room}</b>{" "}
+                  <small>({days} nights)</small>
                 </h2>
-                <button>예약 가능 여부 확인</button>
+                <button onClick={handleClick}>예약 가능 여부 확인</button>
               </div>
             </div>
           </div>
           <MailList />
           <Footer />
         </div>
-      }
+      )}
+      {openModal && <Reserve setOpen={setOpenModal} hotelId={id} />}
     </div>
   );
 };

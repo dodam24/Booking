@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./searchItem.css";
 
+// Image / Description / Details 크게 세 부분으로 나눈다.
+
 const SearchItem = ({ item }) => {
   return (
     <div className="searchItem">
