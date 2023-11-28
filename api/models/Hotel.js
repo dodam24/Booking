@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+
+// 호텔 정보를 저장하는 스키마 정의
 const HotelSchema = new mongoose.Schema({
   name: {
     type: String,

@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+
+// 객실 정보를 저장하는 스키마 정의
 const RoomSchema = new mongoose.Schema(
   {
     title: {
@@ -17,7 +19,7 @@ const RoomSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    roomNumbers: [{ number: Number, unavailableDates: {type: [Date]}}], // [{ number: 101, unavailableDates:[12.23.2023, 12.25.2023] }]
+    roomNumbers: [{ number: Number, unavailableDates: { type: [Date] } }],
   },
   { timestamps: true }
 );
