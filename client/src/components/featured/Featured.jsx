@@ -22,7 +22,7 @@ const Featured = () => {
               className="featuredImg"
             />
             <div className="featuredTitles">
-              <h1>Berlin</h1>
+              <h1>서울</h1>
               <h2>숙소 {data[0]}개</h2>
             </div>
           </div>
@@ -35,7 +35,7 @@ const Featured = () => {
               className="featuredImg"
             />
             <div className="featuredTitles">
-              <h1>Madrid</h1>
+              <h1>부산</h1>
               <h2>숙소 {data[1]}개</h2>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Featured = () => {
               className="featuredImg"
             />
             <div className="featuredTitles">
-              <h1>London</h1>
+              <h1>제주</h1>
               <h2>숙소 {data[2]}개</h2>
             </div>
           </div>
