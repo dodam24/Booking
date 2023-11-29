@@ -42,7 +42,31 @@ const useFetch = (url) => {
     setLoading(false);
   };
 
-  return { data, loading, error, reFetch };
+  /*
+// URL을 통해 파일을 업로드
+const uploadFileViaUrl = async () => {
+  try {
+    // axios를 사용하여 HTTP 요청을 수행
+    const response = await axios({
+      method: "POST", // POST 메서드를 사용하여 데이터를 서버로 전송
+      url: "https://api.baserow.io/api/user-files/upload-via-url/", // 업로드를 처리할 서버의 엔드포인트 URL
+      headers: {
+        Authorization: "XxxkOUHDhkcPGvTPtTiMoxOwTR7KZCgw",
+        "Content-Type": "application/json"  // 요청 내용이 JSON 형식임을 명시
+      },
+      data: {
+        "url": "https://baserow.io/assets/photo.png"  // 업로드할 파일의 URL
+      }
+    });
+
+    console.log(response.data);
+  } catch (error) {
+    console.error("파일 업로드 중 오류 발생:", error);
+  }
+}
+*/
+
+  return { data, loading, error, reFetch };  // + uploadFileViaUrl
 };
 
 export default useFetch;

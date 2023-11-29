@@ -4,7 +4,7 @@ import "./featured.css";
 const Featured = () => {
   // useFetch 훅을 통해 API에서 데이터를 가져온다.
   const { data, loading, error } = useFetch(
-    "/hotels/countByCity?cities=berlin,madrid,london"
+    `/hotels/countByCity?cities=${encodeURIComponent('서울')},${encodeURIComponent('부산')},${encodeURIComponent('제주')}`
   );
 
   // 데이터 로딩 중에는 로딩 메시지를 표시하고, 데이터 로딩이 완료되면 각 도시에 대한 정보를 표시
@@ -14,10 +14,10 @@ const Featured = () => {
         "로드 중입니다. 잠시만 기다려 주세요."
       ) : (
         <>
-          {/* Berlin에 대한 정보를 표시 */}
+          {/* 서울 숙소에 대한 정보를 표시 */}
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/438919661.jpg?k=c3a9ad9354a9014b1e4117cfcbd528a9423a8af076b704de7969fab2f411695b&o=&hp=11"
               alt=""
               className="featuredImg"
             />
@@ -27,10 +27,10 @@ const Featured = () => {
             </div>
           </div>
 
-          {/* Madrid에 대한 정보를 표시 */}
+          {/* 부산 숙소에 대한 정보를 표시 */}
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/114557545.jpg?k=a56d494de4f3532dfdfb93e5c5ed60facaa0a9f3135649f9c1edfa0522ae0371&o=&hp=1"
               alt=""
               className="featuredImg"
             />
@@ -40,10 +40,10 @@ const Featured = () => {
             </div>
           </div>
 
-          {/* London에 대한 정보를 표시 */}
+          {/* 제주 숙소에 대한 정보를 표시 */}
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/161534854.jpg?k=626d141cdf71ac39b9b5fe16600fb4a23e8eca191ee708d4357443ffbd62fe90&o=&hp=1"
               alt=""
               className="featuredImg"
             />
