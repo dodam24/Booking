@@ -44,7 +44,7 @@ const Footer = () => {
           <li className="fListItem">개인정보 보호정책 & 쿠키 정책</li>
         </ul>
       </div>
-      <div className="fText">Copyright © 2022 HotelBooking.</div>
+      <div className="fText">Copyright © 2023 HotelBooking.</div>
     </div>
   );
 };

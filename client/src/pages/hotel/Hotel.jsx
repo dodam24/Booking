@@ -37,7 +37,28 @@ const Hotel = () => {
     return diffDays;
   }
 
-  const days = dayDifference(dates[0].endDate, dates[0].startDate);
+  const days = dayDifference(new Date(dates[0].endDate), new Date(dates[0].startDate));
+
+  const photos = [
+    {
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/275253666.jpg?k=ca3a86a556ccde85c7622705c07c6fa4178a2fefab37be799beca8d8b3fe5a75&o=&hp=1",
+    },
+    {
+      src: "https://cf.bstatic.com/images/hotel/max1024x768/161/161542530.jpg",
+    },
+    {
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/402062946.jpg?k=5f2783e3799088b4e8f20a6ae1eccaa82dc5973694c41553773ed8c0401a71cc&o=&hp=1",
+    },
+    {
+      src: "https://cf.bstatic.com/images/hotel/max1024x768/261/261488854.jpg",
+    },
+    {
+      src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482920560.jpg?k=82c86412a2cd31845422888d9947e29b947f0e32d897705d28842dde5192f62a&o=&hp=1",
+    },
+    {
+      src: "https://cf.bstatic.com/images/hotel/max1024x768/161/161541337.jpg",
+    },
+  ];
 
   const handleOpen = (i) => {
     setSlideNumber(i);
@@ -86,7 +107,7 @@ const Hotel = () => {
               />
               <div className="sliderWrapper">
                 <img
-                  src={data.photos[slideNumber]}
+                  src={photos[slideNumber].src}
                   alt=""
                   className="sliderImg"
                 />
@@ -109,15 +130,15 @@ const Hotel = () => {
               최고의 위치 – 중심부에서 {data.distance}m
             </span>
             <span className="hotelPriceHighlight">
-              이 숙박 시설에서 ${data.cheapestPrice} 이상 예약하시면 무료 공항
+              이 숙박 시설에서 {data.cheapestPrice}만원 이상 예약하시면 무료 공항
               택시를 이용하실 수 있습니다.
             </span>
             <div className="hotelImages">
-              {data.photos?.map((photo, i) => (
+              {photos.map((photo, i) => (
                 <div className="hotelImgWrapper" key={i}>
                   <img
                     onClick={() => handleOpen(i)}
-                    src={photo}
+                    src={photo.src}
                     alt=""
                     className="hotelImg"
                   />
@@ -130,13 +151,13 @@ const Hotel = () => {
                 <p className="hotelDesc">{data.desc}</p>
               </div>
               <div className="hotelDetailsPrice">
-                <h1>9박 일정에 완벽한 선택!</h1>
+                <h1>{days}박 일정에 완벽한 선택!</h1>
                 <span>
-                  크라쿠프의 중심에 위치한 이 숙박 시설은 9.8의 훌륭한 위치
+                  {data.address}의 중심에 위치한 이 숙박 시설은 {data.rating}의 훌륭한 위치
                   평점을 자랑합니다.
                 </span>
                 <h2>
-                  <b>${days * data.cheapestPrice * options.room}</b>{" "}
+                  <b>₩{days * data.cheapestPrice * options.room}만원</b>{" "}
                   <small>({days} nights)</small>
                 </h2>
                 <button onClick={handleClick}>예약 가능 여부 확인</button>

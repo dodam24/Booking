@@ -12,17 +12,19 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
 import { DateRange } from "react-date-range"; // 날짜 범위 선택을 위한 컴포넌트
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "react-date-range/dist/styles.css"; // 메인 css 파일
 import "react-date-range/dist/theme/default.css"; // 테마 css 파일
 import { format } from "date-fns"; // date-fns 라이브러리의 format 함수
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
+import { SearchContext } from "../../context/SearchContext";
 
 const Header = ({ type }) => {
   // 도착지, 날짜, 인원 및 객실 옵션, 헤더 타입에 대한 상태 관리
   const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
-  const [date, setDate] = useState([
+  const [dates, setDates] = useState([
     {
       startDate: new Date(),
       endDate: new Date(),
@@ -38,6 +40,7 @@ const Header = ({ type }) => {
 
   // 페이지 이동 처리
   const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
 
   // 옵션 값(성인, 아동, 객실)의 증감을 처리하는 함수
   const handleOption = (name, operation) => {
@@ -49,9 +52,12 @@ const Header = ({ type }) => {
     });
   };
 
+  const { dispatch } = useContext(SearchContext);
+
   // 호텔 검색을 처리하는 함수
   const handleSearch = () => {
-    navigate("/hotels", { state: { destination, date, options } });
+    dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
+    navigate("/hotels", { state: { destination, dates, options } });
   };
 
   // Header 컴포넌트의 UI를 반환
@@ -95,7 +101,7 @@ const Header = ({ type }) => {
               여행에 대한 보상을 받으세요! - 무료 Hotelbooking 계정으로 10% 이상
               즉시 할인 혜택을 누리세요.
             </p>
-            <button className="headerBtn">로그인 / 가입하기</button>
+            {!user && <button className="headerBtn">로그인 / 가입하기</button>}
             {/* 호텔 검색을 위한 검색창 */}
             <div className="headerSearch">
               {/* 도착지, 날짜, 인원 및 객실 옵션을 입력하는 부분 */}
@@ -114,17 +120,17 @@ const Header = ({ type }) => {
                   onClick={() => setOpenDate(!openDate)}
                   className="headerSearchText"
                 >
-                  {`${format(date[0].startDate, "yyyy년 MM월 dd일")} - ${format(
-                    date[0].endDate,
+                  {`${format(dates[0].startDate, "yyyy년 MM월 dd일")} - ${format(
+                    dates[0].endDate,
                     "yyyy년 MM월 dd일"
                   )}`}
                 </span>
                 {openDate && (
                   <DateRange
                     editableDateInputs={true}
-                    onChange={(item) => setDate([item.selection])}
+                    onChange={(item) => setDates([item.selection])}
                     moveRangeOnFirstSelection={false}
-                    ranges={date}
+                    ranges={dates}
                     className="date"
                     minDate={new Date()}
                   />

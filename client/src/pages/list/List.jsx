@@ -11,7 +11,7 @@ import useFetch from "../../hooks/useFetch";
 const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
-  const [date, setDate] = useState(location.state.date);
+  const [dates, setDates] = useState(location.state.dates);
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
   const [min, setMin] = useState(undefined);
@@ -52,14 +52,14 @@ const List = () => {
             <div className="lsItem">
               <label>체크인 및 체크아웃 날짜</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${format(
-                date[0].startDate,
+                dates[0].startDate,
                 "yyyy/MM/dd"
-              )} - ${format(date[0].endDate, "yyyy/MM/dd")}`}</span>
+              )} - ${format(dates[0].endDate, "yyyy/MM/dd")}`}</span>
               {openDate && (  // 열려 있으면 날짜 범위를 보여준다.
                 <DateRange
-                  onChange={(item) => setDate([item.selection])}
+                  onChange={(item) => setDates([item.selection])}
                   minDate={new Date()}
-                  ranges={date}
+                  ranges={dates}
                 />
               )}
             </div>
