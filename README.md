@@ -1,8 +1,15 @@
-# Home
-<img alt="Home" src="https://github.com/dodam24/Booking/assets/121652059/9d8074db-a88e-4a21-8046-d61e70ccaed3">
+# 메인 페이지
 
-# Admin Dashboard
-<img alt="Admin Dashboard" src="https://github.com/dodam24/BookingApp/assets/121652059/14af2d5f-7d97-48a5-97a1-dfb9272a485e">
+# 검색 옵션 설정
+![호텔 검색](https://github.com/dodam24/BookingApp/assets/121652059/e660e33a-d012-409d-8aa0-3498f6fb3fa2)
+
+# 검색 결과 페이지
+
+# 호텔 상세 페이지
+![호텔 페이지](https://github.com/dodam24/BookingApp/assets/121652059/40adf7d8-2205-46d4-9a07-e0f30811ab0b)
+
+# 예약 페이지
+![객실 예약](https://github.com/dodam24/BookingApp/assets/121652059/e7814859-3c64-4c45-b96e-9219fd508707)
 
 
 # Getting Started with Create React App
