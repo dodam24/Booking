@@ -38,18 +38,28 @@
 
 .rTitle {
   font-weight: 500;
+  margin: 10px 0;
+}
+
+.rItemImg {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .rDesc {
   font-weight: 300;
+  margin: 5px 0;
 }
 
 .rMax {
   font-size: 12px;
+  margin: 5px 0;
 }
 
 .rPrice {
   font-weight: 500;
+  margin: 15px 0;
 }
 
 .rSelectRooms {

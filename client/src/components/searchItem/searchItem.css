@@ -67,13 +67,14 @@
 }
 
 .siRating{
-  position: fixed;
+  position: sticky;
   display: flex;
-  justify-content: space-between
+  justify-content: flex-end;
 }
 
 .siRating>span{
   font-weight: 500;
+  margin-right: 8px;
 }
 .siRating>button{
  background-color: #003580;
@@ -92,6 +93,7 @@
 
 .siPrice{
   font-size: 24px;
+  font-weight: 600;
 }
 
 .siTaxOp{

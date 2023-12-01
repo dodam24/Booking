@@ -19,17 +19,20 @@ import Reserve from "../../components/reserve/Reserve";
 
 const Hotel = () => {
   const location = useLocation();
-  const id = location.pathname.split("/")[2];
+  const id = location.pathname.split("/")[2]; // URL에서 호텔 아이디를 추출
+  // 각각의 상태들을 초기화
   const [slideNumber, setSlideNumber] = useState(0);
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-
+  // 호텔 정보를 가져오는 useFetch
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
-  const { user } = useContext(AuthContext);
-  const navigate = useNavigate();
+  const { user } = useContext(AuthContext); // 인증된 사용자 정보 가져오기
+  const navigate = useNavigate(); // 페이지 이동 함수
 
+  // SearchContext에서 검색 일자 및 옵션 정보 가져오기
   const { dates, options } = useContext(SearchContext);
 
+  // 두 날짜 간의 차이를 계산
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
     const timeDiff = Math.abs(date2.getTime() - date1.getTime());
@@ -37,8 +40,10 @@ const Hotel = () => {
     return diffDays;
   }
 
+  // 두 날짜 간의 숙박 일수를 계산
   const days = dayDifference(new Date(dates[0].endDate), new Date(dates[0].startDate));
 
+  // 호텔 이미지
   const photos = [
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/275253666.jpg?k=ca3a86a556ccde85c7622705c07c6fa4178a2fefab37be799beca8d8b3fe5a75&o=&hp=1",
@@ -60,11 +65,13 @@ const Hotel = () => {
     },
   ];
 
+  // 슬라이더 열기
   const handleOpen = (i) => {
     setSlideNumber(i);
     setOpen(true);
   };
 
+  // 슬라이더 이동 함수
   const handleMove = (direction) => {
     let newSlideNumber;
 
@@ -77,6 +84,7 @@ const Hotel = () => {
     setSlideNumber(newSlideNumber);
   };
 
+  // 예약 버튼 클릭 시, 함수를 실행
   const handleClick = () => {
     if (user) {
       setOpenModal(true);
@@ -88,11 +96,13 @@ const Hotel = () => {
   return (
     <div>
       <Navbar />
+      {/* 리스트 페이지의 헤더 부분 */}
       <Header type="list" />
       {loading ? (
         "loading"
       ) : (
         <div className="hotelContainer">
+          {/* 이미지 슬라이더 모달창 */}
           {open && (
             <div className="slider">
               <FontAwesomeIcon
@@ -119,8 +129,9 @@ const Hotel = () => {
               />
             </div>
           )}
+          {/* 호텔의 정보를 표시 */}
           <div className="hotelWrapper">
-            <button className="bookNow">지금 예약</button>
+            <button className="bookNow" onClick={handleClick}>지금 예약</button>
             <h1 className="hotelTitle">{data.name}</h1>
             <div className="hotelAddress">
               <FontAwesomeIcon icon={faLocationDot} />
@@ -133,6 +144,7 @@ const Hotel = () => {
               이 숙박 시설에서 {data.cheapestPrice}만원 이상 예약하시면 무료 공항
               택시를 이용하실 수 있습니다.
             </span>
+            {/* 호텔 이미지 부분 */}
             <div className="hotelImages">
               {photos.map((photo, i) => (
                 <div className="hotelImgWrapper" key={i}>
@@ -145,6 +157,7 @@ const Hotel = () => {
                 </div>
               ))}
             </div>
+            {/* 호텔 상세 정보를 표시 */}
             <div className="hotelDetails">
               <div className="hotelDetailsTexts">
                 <h1 className="hotelTitle">{data.title}</h1>
@@ -160,14 +173,16 @@ const Hotel = () => {
                   <b>₩{days * data.cheapestPrice * options.room}만원</b>{" "}
                   <small>({days} nights)</small>
                 </h2>
-                <button onClick={handleClick}>예약 가능 여부 확인</button>
+                <button onClick={handleClick}>지금 예약</button>
               </div>
             </div>
           </div>
           <MailList />
+          <br/>
           <Footer />
         </div>
       )}
+      {/* 모달이 열려있을 때, 예약 컴포넌트를 렌더링 */}
       {openModal && <Reserve setOpen={setOpenModal} hotelId={id} />}
     </div>
   );
