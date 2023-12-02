@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
 import "./searchItem.css";
 
-// Image / Description / Details
 const SearchItem = ({ item }) => {
-  const images = [
-    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/323576578.jpg?k=1cecd34ff1f6faf5da7dc135e516b9fb9ecc2a305db085f2acf2653e4b49c6e9&o=&hp=1",
-    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/260997076.jpg?k=f1971daaf53668b34e4baaa14ed11bc96b80c187ad7eeb82f7c7db3b1bc28317&o=&hp=1",
-    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/298467205.jpg?k=78323ffcf3e510bc4260a20162d660a990ff011cb6750d79070a2b77c2360759&o=&hp=1",
-  ];
-
   return (
     <div className="searchItem">
-      <img src={images} alt="" className="siImg" />
+      <img src={item.photos[0]} alt="" className="siImg" />
       <div className="siDesc">
         <h1 className="siTitle">{item.name}</h1>
         <span className="siDistance">중심부에서 {item.distance}m</span>
