@@ -4,6 +4,7 @@
 ![호텔 검색](https://github.com/dodam24/BookingApp/assets/121652059/e660e33a-d012-409d-8aa0-3498f6fb3fa2)
 
 # 검색 결과 페이지
+![검색 결과](https://github.com/dodam24/BookingApp/assets/121652059/002919ab-dd1b-4935-b24e-8cf4c6d9b2f4)
 
 # 호텔 상세 페이지
 ![호텔 페이지](https://github.com/dodam24/BookingApp/assets/121652059/40adf7d8-2205-46d4-9a07-e0f30811ab0b)
