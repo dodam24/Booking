@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   // 로그인 정보를 담는 상태 및 상태 업데이트 함수 정의
-  const [credentials, setCredentials] = useState({  // 로그인 폼에서 입력된 유저명과 비밀번호를 저장하고, 입력 필드 값이 변경될 때 해당 상태를 업데이트
+  const [credentials, setCredentials] = useState({
+    // 로그인 폼에서 입력된 유저명과 비밀번호를 저장하고, 입력 필드 값이 변경될 때 해당 상태를 업데이트
     username: undefined,
     password: undefined,
   });
@@ -26,14 +27,14 @@ const Login = () => {
   // 로그인 버튼 클릭 시 함수를 실행
   const handleClick = async (e) => {
     e.preventDefault();
-    dispatch({ type: "LOGIN_START" });  // 로그인 시작을 알리는 액션 디스패치
+    dispatch({ type: "LOGIN_START" }); // 로그인 시작을 알리는 액션 디스패치
     try {
       // Axios를 사용하여 서버에 로그인 요청 보내기
       const res = await axios.post("/auth/login", credentials);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data }); // 로그인 성공을 알리는 액션 디스패치
-      navigate("/");  // 로그인 성공 시, 홈페이지로 이동
+      navigate("/"); // 로그인 성공 시, 홈페이지로 이동
     } catch (err) {
-      dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });  // 로그인 실패를 알리는 액션 디스패치
+      dispatch({ type: "LOGIN_FAILURE", payload: err.response.data }); // 로그인 실패를 알리는 액션 디스패치
     }
   };
 
@@ -64,6 +65,18 @@ const Login = () => {
           </button>
           {/* 에러 메시지 표시 */}
           {error && <span className="errMessage">{error.message}</span>}
+
+          {/* SNS 로그인 연동 */}
+          <div className="sContainer">
+            <div className="inputGroup">
+              <button className="loginButton" onClick={kakao}>
+                <img src="../assets/kakao.png" alt="kakao" />
+              </button>
+              <button className="loginButton" onClick={github}>
+                <img src="../assets/github.png" alt="github" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
