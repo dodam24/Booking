@@ -1,4 +1,5 @@
 ### 메인 페이지
+https://github.com/dodam24/BookingApp/assets/121652059/9be5deb8-3850-4760-9c16-3e736098c7e4
 
 ### 검색 옵션 설정
 ![호텔 검색](https://github.com/dodam24/BookingApp/assets/121652059/e660e33a-d012-409d-8aa0-3498f6fb3fa2)
@@ -12,8 +13,8 @@
 ### 예약 페이지
 ![객실 예약](https://github.com/dodam24/BookingApp/assets/121652059/e7814859-3c64-4c45-b96e-9219fd508707)
 
-### 로그인
-![로그인](https://github.com/dodam24/BookingApp/assets/121652059/b5e9d88d-1e93-418b-9c63-2d24164b7c53)
+### 로그인 화면
+![로그인 화면](https://github.com/dodam24/BookingApp/assets/121652059/b5e9d88d-1e93-418b-9c63-2d24164b7c53)
 
 
 
