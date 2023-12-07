@@ -65,18 +65,6 @@ const Login = () => {
           </button>
           {/* 에러 메시지 표시 */}
           {error && <span className="errMessage">{error.message}</span>}
-
-          {/* SNS 로그인 연동 */}
-          <div className="sContainer">
-            <div className="inputGroup">
-              <button className="loginButton" onClick={kakao}>
-                <img src="../assets/kakao.png" alt="kakao" />
-              </button>
-              <button className="loginButton" onClick={github}>
-                <img src="../assets/github.png" alt="github" />
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </>
